@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import AuthProvider from './contex/AuthProvider';
 import Shipping from './components/Shipping/Shipping';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <PrivateRoute path="/shipping">
               <Shipping></Shipping>
+            </PrivateRoute >
+            <PrivateRoute path="/placeorder">
+              <PlaceOrder></PlaceOrder>
             </PrivateRoute >
 
           </Switch>
